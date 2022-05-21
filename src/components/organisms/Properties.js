@@ -84,6 +84,7 @@ const Properties = ({ memberships, type, isLoading }) => {
                         <div className="row">
                             {pageNum < totalPages && (
                                 <button
+                                    aria-label="Next Page"
                                     className="properties__pagination button button-primary"
                                     onClick={nextPage}
                                 >

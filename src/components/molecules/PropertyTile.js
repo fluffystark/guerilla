@@ -9,7 +9,7 @@ const PropertyTile = ({ property }) => {
                 <img
                     className="property-tile__image__inner"
                     src={property.image.url}
-                    alt="Property Thumbnail"
+                    alt={`Property ${property.title}`}
                 />
             </div>
             <div className="property-tile__content">

@@ -4,10 +4,10 @@ import Properties from "./organisms/Properties";
 
 function App() {
     return (
-        <div className="App">
+        <main className="App">
             <Properties />
             <About />
-        </div>
+        </main>
     );
 }
 
