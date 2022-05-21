@@ -1,0 +1,18 @@
+.button {
+    padding: 18px 24px;
+    display: inline-block;
+    font-size: rem-calc(14px);
+    line-height: 1.2;
+    font-weight: 400;
+    border: none;
+    background-color: $colors_primary;
+    color: white;
+    font-family: $font_family_main;
+    transition: 200ms;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $colors_gray;
+        color: $colors_primary;
+    }
+}

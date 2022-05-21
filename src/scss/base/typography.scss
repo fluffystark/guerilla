@@ -1,0 +1,37 @@
+body {
+    font-family: $font_family_main;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    // heading resets
+    margin: 0px;
+    font-weight: 700;
+    color: $colors_primary;
+}
+
+h2 {
+    font-size: rem-calc(48px);
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: rem-calc(18px);
+    line-height: 1.2;
+    font-weight: 400;
+    margin: 0px;
+}
+
+select {
+    &:focus-visible {
+        outline: none;
+    }
+}

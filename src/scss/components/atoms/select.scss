@@ -1,0 +1,24 @@
+.select {
+    background-color: transparent;
+    border: none;
+    font-size: rem-calc(14px);
+    line-height: 1.2;
+    font-weight: 400;
+    border: none;
+    font-family: $font_family_main;
+    padding: 13.5px 18px 13.5px 0px;
+
+    &__container {
+        position: relative;  
+    }
+
+    &__arrow {
+        content: "";
+        position: absolute;
+        top: calc(50% - 3px);
+        right: 0;
+        width: 8px;
+        height: 6px;
+    }  
+
+}

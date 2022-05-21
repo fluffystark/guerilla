@@ -1,0 +1,30 @@
+.properties {
+    margin: 150px 0px 48px;
+
+    &__pagination {
+        margin: auto;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+    }
+
+    &__desc {
+        color: $colors_gray;
+        margin-bottom: 42px;
+    }
+
+    &__list {
+        margin-top: 23px;
+    }
+
+    &__filter {
+        margin-bottom: 10px;
+
+        &__inner {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+    }
+}

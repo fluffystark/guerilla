@@ -1,0 +1,15 @@
+// $breakpoint_xl: 96.0625em; // 1537px
+$breakpoint_xl: 90em; // 1440px
+$breakpoint_lg: 75em; // 1200px
+$breakpoint_md: 64em; // 1024px
+$breakpoint_sm: 48em; // 768px
+$breakpoint_desktop: md;
+
+$small_mobile_breakpoint: 400px;
+
+:export {
+    xl: calc(($breakpoint_xl / 1em) * 16);
+    lg: calc(($breakpoint_lg / 1em) * 16);
+    md: calc(($breakpoint_md / 1em) * 16);
+    sm: calc(($breakpoint_sm / 1em) * 16);
+}

@@ -1,6 +1,8 @@
 import * as React from "react";
 import Config from "../../constants/Config";
 import { query } from "../../api/query";
+import PropertyTile from "../molecules/PropertyTile";
+import Select from "../atoms/Select";
 
 const Properties = ({ memberships, type, isLoading }) => {
     const PER_PAGE = 3;
@@ -43,29 +45,55 @@ const Properties = ({ memberships, type, isLoading }) => {
 
     return (
         <div className="properties">
-            <h2>Properties</h2>
-            <p>Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
-            <div>
-                <select value={activeFilter} onChange={handleChange}>
-                    <option value=""></option>
-                    <option value="Apartment">Apartment</option>
-                    <option value="House">House</option>
-                    <option value="Penthouse">Penthouse</option>
-                    <option value="Villa">Villa</option>
-                </select>
-            </div>
-            {properties && properties.length > 0 && (
-                openProperties.map((property) => {
-                    return (
-                        <div>
-                            {property.title}
+            <div className="container">
+                <div className="row">
+                    <div className="col-xs-12">
+                        <h2 className="properties__title">Properties</h2>
+                        <p className="properties__desc">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+                        <div className="row properties__filter">
+                            <div className="col-xs-12">
+                                <div className="properties__filter__inner">
+                                    <Select
+                                        className="properties__filter__input"
+                                        value={activeFilter}
+                                        onChange={handleChange}
+                                    >
+                                        <option value="">All categories</option>
+                                        <option value="Apartment">Apartment</option>
+                                        <option value="House">House</option>
+                                        <option value="Penthouse">Penthouse</option>
+                                        <option value="Villa">Villa</option>
+                                    </Select>
+                                </div>
+                            </div>
                         </div>
-                    );
-                })
-            )}
-            {pageNum < totalPages && (
-                <button onClick={nextPage}>Load more</button>
-            )}
+                        <div className="row">
+                            {properties && properties.length > 0 && (
+                                openProperties.map((property) => {
+                                    return (
+                                        <div className="col-xs-12 col-md-4">
+                                            <PropertyTile
+                                                key={property.id}
+                                                property={property}
+                                            />
+                                        </div>
+                                    );
+                                })
+                            )}
+                        </div>
+                        <div className="row">
+                            {pageNum < totalPages && (
+                                <button
+                                    className="properties__pagination button button-primary"
+                                    onClick={nextPage}
+                                >
+                                    Load more
+                                </button>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
