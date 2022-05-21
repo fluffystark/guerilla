@@ -3,6 +3,7 @@
     background-color: $colors_blue;
     padding-top: 176px;
     padding-bottom: 176px;
+    width: 100%;
 
     &__content {
         max-width: 635px;
@@ -29,5 +30,10 @@
         bottom: 0px;
         right: 0px;
         height: 100%;
+        display: flex;
+
+        &__inner {
+            margin-top: auto;
+        }
     }
 }

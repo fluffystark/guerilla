@@ -15,6 +15,7 @@
 @import "components/organisms/properties";
 @import "components/organisms/about";
 @import "components/organisms/hero";
+@import "components/organisms/nav";
 
 // Molecules
 @import "components/molecules/property-tile";
@@ -22,3 +23,4 @@
 // Atoms
 @import "components/atoms/button";
 @import "components/atoms/select";
+@import "components/atoms/logo";

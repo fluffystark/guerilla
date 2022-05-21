@@ -1,6 +1,13 @@
 .about {
     margin: 150px 0px;
 
+    &__image {
+        &__inner {
+            width: 100%;
+            max-width: 445px;
+        }
+    }
+
     &__content {
         margin-top: 50px;
 
@@ -13,6 +20,7 @@
         }
         &__footer {
             display: flex;
+            flex-wrap: wrap;
 
             &__item {
                 &:first-child {

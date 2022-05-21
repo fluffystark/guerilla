@@ -9,7 +9,7 @@ const Hero = () => {
                 <img
                     className="hero__image__inner"
                     src={HouseImage}
-                    alt="About Building"
+                    alt="Hero Building"
                 />
             </div>
             <div className="container">

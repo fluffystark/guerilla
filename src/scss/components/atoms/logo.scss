@@ -1,0 +1,8 @@
+.logo {
+    &--primary {
+        fill: $colors_primary;
+        > * {
+            fill: $colors_primary;
+        }
+    }
+}
