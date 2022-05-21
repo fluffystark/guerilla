@@ -1,5 +1,6 @@
 import "flexboxgrid";
 import About from "./organisms/About";
+import Footer from "./organisms/Footer";
 import Hero from "./organisms/Hero";
 import Nav from "./organisms/Nav";
 import Properties from "./organisms/Properties";
@@ -13,6 +14,7 @@ function App() {
                 <Properties />
                 <About />
             </main>
+            <Footer />
         </>
     );
 }

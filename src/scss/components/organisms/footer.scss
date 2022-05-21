@@ -1,0 +1,46 @@
+.footer {
+    background: $colors_primary;
+    padding-top: 93px;
+    padding-bottom: 45px;
+    color: white;
+
+    &__contact {
+        &__details {
+            margin-top: 12px;
+
+            &__text {
+                font-family: $font_family_main;
+                font-size: rem-calc(14px);
+                line-height: 18px;
+                color: $colors_gray;
+                display: block;
+            }
+        }
+    }
+
+    &__nav {
+        &__title {
+            font-family: $font_family_main;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: rem-calc(18px);
+            line-height: 1.2;
+        }
+
+        &__link {
+            font-family: $font_family_main;
+            font-size: rem-calc(14px);
+            line-height: 18px;
+            color: $colors_gray;
+            display: block;
+            margin-top: 12px;
+        }
+    }
+
+    &__copyright {
+        margin-top: 100px;
+        font-size: rem-calc(12px);
+        line-height: rem-calc(15px);
+        color: $colors_gray;
+    }
+}
