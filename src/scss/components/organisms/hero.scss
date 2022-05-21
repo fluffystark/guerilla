@@ -1,3 +1,33 @@
 .hero {
-    &__title {}
+    position: relative;
+    background-color: $colors_blue;
+    padding-top: 176px;
+    padding-bottom: 176px;
+
+    &__content {
+        max-width: 635px;
+        
+        &__title {
+            margin-bottom: 18px;
+        }
+    
+        &__desc {
+            margin: 18px 0px 32px;
+        }
+    
+        &__footer {
+            margin-top: 32px;
+
+            &__cta {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: 100%;
+    }
 }

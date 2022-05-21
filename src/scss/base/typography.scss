@@ -14,6 +14,11 @@ h6 {
     color: $colors_primary;
 }
 
+h1 {
+    font-size: rem-calc(90px);
+    line-height: 1.2;
+}
+
 h2 {
     font-size: rem-calc(48px);
     line-height: 1.2;

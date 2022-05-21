@@ -6,13 +6,27 @@
     font-weight: 400;
     border: none;
     background-color: $colors_primary;
+    border: 1px solid $colors_primary;
     color: white;
     font-family: $font_family_main;
     transition: 200ms;
     cursor: pointer;
 
     &:hover {
-        background-color: $colors_gray;
+        border: 1px solid $colors_primary;
+        background-color: transparent;
         color: $colors_primary;
+    }
+
+    &--outline {
+        border: 1px solid $colors_primary;
+        background-color: transparent;
+        color: $colors_primary;
+
+        &:hover {
+            background-color: $colors_primary;
+            border: 1px solid $colors_primary;
+            color: white;
+        }
     }
 }
