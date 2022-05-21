@@ -19,6 +19,10 @@
     }
 
     &__nav {
+        @media only screen and (max-width: 425px) {
+            margin-top: 32px;
+        }
+
         &__title {
             font-family: $font_family_main;
             text-transform: uppercase;
